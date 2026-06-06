@@ -12,25 +12,11 @@ const links = [
   { href: "/gallery", label: "Gallery" },
 ];
 
-const voteLinks = [
-  "https://minecraftbestservers.com/server-zelmyra.6908/vote",
-  "https://play-minecraft-servers.com/minecraft-servers/zelmyra/?tab=vote",
-  "https://minecraft.buzz/vote/20949",
-  "https://minecraftservers.org/vote/687097",
-  "https://minecraft-server-list.com/server/519850/vote/",
-];
-
-function VoteButton({ mobile = false }: { mobile?: boolean }) {
-  function openVoteLinks() {
-    voteLinks.forEach((url) => {
-      window.open(url, "_blank", "noopener,noreferrer");
-    });
-  }
-
+function VoteLink({ mobile = false, onClick }: { mobile?: boolean; onClick?: () => void }) {
   return (
-    <button
-      type="button"
-      onClick={openVoteLinks}
+    <Link
+      href="/vote"
+      onClick={onClick}
       className={
         mobile
           ? "w-full rounded-xl border border-purple-400/40 bg-purple-600 px-4 py-3 text-left text-sm font-black text-white transition hover:bg-purple-500"
@@ -38,7 +24,7 @@ function VoteButton({ mobile = false }: { mobile?: boolean }) {
       }
     >
       Vote
-    </button>
+    </Link>
   );
 }
 
@@ -59,7 +45,7 @@ export default function Navbar() {
             </Link>
           ))}
 
-          <VoteButton />
+          <VoteLink />
 
           <a
             href="https://zelmyra.tebex.io/"
@@ -108,7 +94,7 @@ export default function Navbar() {
               </Link>
             ))}
 
-            <VoteButton mobile />
+            <VoteLink mobile onClick={() => setMobileOpen(false)} />
 
             <a
               href="https://zelmyra.tebex.io/"
