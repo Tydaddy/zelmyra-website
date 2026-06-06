@@ -26,7 +26,7 @@ boss-cryo-vault.png
 ```text
 economy-towns.png
 economy-market-builds.png
-economy-long-term-wealth.png
+economy-economy-long-term-wealth.png
 ```
 
 ## Events

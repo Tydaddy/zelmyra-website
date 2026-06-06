@@ -1,4 +1,3 @@
-import Image from "next/image";
 import CTA from "@/components/CTA";
 import PageHero from "@/components/PageHero";
 import galleryImages from "@/data/gallery-images.json";
@@ -27,12 +26,11 @@ export default function GalleryPage() {
                 key={src}
                 className="group relative h-80 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035]"
               >
-                <Image
+                <img
                   src={src}
                   alt="Zelmyra Minecraft SMP gallery screenshot"
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transition duration-700 group-hover:scale-105"
+                  loading="lazy"
+                  className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
                 />
               </div>
             ))}
