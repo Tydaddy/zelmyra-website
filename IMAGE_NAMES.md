@@ -1,56 +1,53 @@
 # Zelmyra Website Image Names
 
-Put images inside `public/images` unless a folder is specifically listed.
+Put images in:
+
+```text
+public/images
+```
 
 ## Home
-- `hero-spawn.png`
-- `hero-town.png`
-- `hero-castle.png`
-- `hero-dungeon.png`
-- `dungeon-purple.png`
-- `players-event.png`
-- `dungeon-copper.png`
+```text
+hero-spawn.png
+hero-town.png
+hero-castle.png
+```
 
 ## Dungeons
-- `boss-tyrant.png`
-- `boss-voltrix.png`
-- `boss-copper-golem.png`
-- `boss-merchant-king.png`
-- `boss-cryo-vault.png`
+```text
+boss-tyrant.png
+boss-voltrix.png
+boss-copper-golem.png
+boss-merchant-king.png
+boss-cryo-vault.png
+```
 
 ## Economy
-- `economy-towns.png`
-- `economy-market-builds.png`
-- `long-term-wealth.png`
+```text
+economy-towns.png
+economy-market-builds.png
+economy-long-term-wealth.png
+```
 
 ## Events
-- `event-fishing-frenzy.png`
-- `event-mining-mayhem.png`
-- `event-slaying-showdown.png`
-
-## Community / Guide Hero Images
-- `community-players.png`
-- `community-town.png`
-- `community-event.png`
+```text
+event-fishing-frenzy.png
+event-mining-mayhem.png
+event-slaying-showdown.png
+```
 
 ## Gallery
-The gallery now automatically lists image files found inside:
+The gallery automatically shows every `.png`, `.jpg`, `.jpeg`, and `.webp` file inside:
 
-- `public/images`
-- `public/image`
+```text
+public/images
+```
 
-Supported formats:
-- `.png`
-- `.jpg`
-- `.jpeg`
-- `.webp`
-- `.gif`
+After adding screenshots, run:
 
-You can also organize images in subfolders under `public/images`, such as:
-
-- `public/images/gallery/gallery-01.png`
-- `public/images/gallery/gallery-02.png`
-- `public/images/spawn/spawn-01.png`
-- `public/images/dungeons/dungeon-01.png`
-
-The gallery page will automatically find them during the site build.
+```cmd
+npm run build
+git add .
+git commit -m "Update website images"
+git push
+```

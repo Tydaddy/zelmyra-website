@@ -6,10 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "gallery": "node scripts/generate-gallery-manifest.mjs",
-    "predev": "npm run gallery",
-    "prebuild": "npm run gallery"
+    "lint": "eslint"
   },
   "dependencies": {
     "@tailwindcss/postcss": "latest",
@@ -17,11 +14,8 @@
     "eslint-config-next": "latest",
     "next": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "typescript": "latest"
   },
-  "devDependencies": {
-    "typescript": "latest",
-    "@types/node": "latest",
-    "@types/react": "latest"
-  }
+  "devDependencies": {}
 }

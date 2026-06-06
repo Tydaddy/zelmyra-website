@@ -23,7 +23,7 @@ export default function EconomyPage() {
       <section className="mx-auto grid max-w-7xl gap-6 px-6 py-24 md:grid-cols-3">
         <ImageCard title="Towns" tag="Build" image="/images/economy-towns.png" text="Create player towns, invite friends, decorate your land, and become part of the world." />
         <ImageCard title="Market Builds" tag="Trade" image="/images/economy-market-builds.png" text="Turn your builds into shops, sell resources, and give other players a reason to visit." />
-        <ImageCard title="Long-Term Wealth" tag="Progress" image="/images/economy-long-term-wealth.png" text="Work toward rare items, keys, spawners, dungeon rewards, and high-value goals." />
+        <ImageCard title="Long-Term Wealth" tag="Progress" image="/images/long-term-wealth.png" text="Work toward rare items, keys, spawners, dungeon rewards, and high-value goals." />
       </section>
       <CTA />
     </main>
