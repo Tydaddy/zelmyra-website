@@ -1,0 +1,15 @@
+Zelmyra website Skyblock SEO update
+
+Main changes:
+- Repositioned the homepage around Zelmyra Skyblock first.
+- Made "No Spawners" and "Gameplay-Earned Free Ranks" prominent above the fold.
+- Expanded /skyblock into a complete landing page.
+- Added crawlable explanations for custom fruits, upgradeable minions, events, auctions, player warps, teams, crossplay, and leaderboards.
+- Added Skyblock FAQ structured data for search and recommendation systems.
+- Added network structured data, robots.txt, sitemap.xml, web manifest, and generated Open Graph/Twitter images.
+- Put Skyblock first in navigation and sitemap priority.
+- Preserved a dedicated Forever SMP landing page.
+- Redirected old SMP-specific routes to the relevant current page.
+- Uses next.config.js only; no unsupported next.config.ts file.
+- ZIP is packaged with exactly one top-level zelmyra-website folder.
+- Validation: npm install and npm run build completed successfully with Next.js 16.2.10.
