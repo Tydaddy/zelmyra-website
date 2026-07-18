@@ -1,53 +1,32 @@
-# Zelmyra Website Image Names
+# Zelmyra website image names
 
-Put images in:
+Keep all images in `public/images`.
 
-```text
-public/images
-```
+## Shared / SMP
+- hero-spawn.png
+- hero-town.png
+- hero-castle.png
+- hero-dungeon.png
+- dungeon-purple.png
+- dungeon-copper.png
+- players-event.png
+- boss-tyrant.png
+- boss-voltrix.png
+- boss-copper-golem.png
+- boss-merchant-king.png
+- boss-cryo-vault.png
+- economy-towns.png
+- economy-market-builds.png
+- economy-long-term-wealth.png
+- event-fishing-frenzy.png
+- event-mining-mayhem.png
+- event-slaying-showdown.png
 
-## Home
-```text
-hero-spawn.png
-hero-town.png
-hero-castle.png
-```
-
-## Dungeons
-```text
-boss-tyrant.png
-boss-voltrix.png
-boss-copper-golem.png
-boss-merchant-king.png
-boss-cryo-vault.png
-```
-
-## Economy
-```text
-economy-towns.png
-economy-market-builds.png
-economy-economy-long-term-wealth.png
-```
-
-## Events
-```text
-event-fishing-frenzy.png
-event-mining-mayhem.png
-event-slaying-showdown.png
-```
-
-## Gallery
-The gallery automatically shows every `.png`, `.jpg`, `.jpeg`, and `.webp` file inside:
-
-```text
-public/images
-```
-
-After adding screenshots, run:
-
-```cmd
-npm run build
-git add .
-git commit -m "Update website images"
-git push
-```
+## Future Skyblock screenshots
+The current Skyblock page uses a custom green visual background and does not require screenshots. When screenshots are added later, use:
+- skyblock-hero.png
+- skyblock-island.png
+- skyblock-fruits.png
+- skyblock-minions.png
+- skyblock-events.png
+- skyblock-leaderboard.png
